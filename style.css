@@ -1,5 +1,4 @@
 /* Global Selectors */
-
 :root {
     /* Primary Colors */
     --darkViolet: hsl(256, 26%, 20%);
@@ -10,7 +9,9 @@
     --veryLightGray: hsl(0, 0%, 98%);
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -31,7 +32,11 @@ hr {
     background-color: var(--veryLightGray);
 }
 
-h1, h2, h3 {font-family: 'Karla', sans-serif}
+h1,
+h2,
+h3 {
+    font-family: 'Karla', sans-serif;
+}
 
 nav {
     position: sticky;
@@ -49,13 +54,21 @@ ul {
     list-style: none;
 }
 
-nav ul {list-style: none}
+nav ul {
+    list-style: none;
+}
 
-nav ul li {display: inline-block}
+nav ul li {
+    display: inline-block;
+}
 
-section, footer {position: relative}
+section,
+footer {
+    position: relative;
+}
 
-#jumbo, #how-we-work {
+#jumbo,
+#how-we-work {
     color: #FFF;
     background-color: var(--darkViolet);
 }
@@ -76,9 +89,14 @@ button {
     align-items: center;
 }
 
-footer {background-color: var(--veryLightGray)}
+footer {
+    background-color: var(--veryLightGray)
+}
 
-#features, footer {display: grid}
+#features,
+footer {
+    display: grid
+}
 
 footer header {
     display: flex;
@@ -102,7 +120,8 @@ footer ul li:first-child {
 
 /* Background Img Classes */
 
-.bg-img-left, .bg-img-right {
+.bg-img-left,
+.bg-img-right {
     position: absolute;
     z-index: 0;
 }
@@ -118,7 +137,9 @@ footer ul li:first-child {
 }
 
 /* Active States */
-nav ul li {transition: all .5s}
+nav ul li {
+    transition: all .5s
+}
 
 nav ul li:nth-of-type(4):hover {
     background-color: black;
@@ -131,7 +152,9 @@ nav ul li:nth-of-type(4):hover {
     color: black;
 }
 
-nav ul li:hover {font-weight: 700}
+nav ul li:hover {
+    font-weight: 700
+}
 
 /* Small Phones: 375px- */
 
@@ -139,12 +162,23 @@ nav ul li:hover {font-weight: 700}
 
     /* Hide Desktop Content */
 
-    .mobile {display: block} .desktop {display: none}
+    .mobile {
+        display: block
+    }
+
+    .desktop {
+        display: none
+    }
 
     /* Tags */
 
-    body {text-align: center;}
-    button {font-size: 1.25rem;}
+    body {
+        text-align: center;
+    }
+
+    button {
+        font-size: 1.25rem;
+    }
 
     section {
         margin-bottom: 8rem;
@@ -167,7 +201,9 @@ nav ul li:hover {font-weight: 700}
         height: 2rem;
     }
 
-    nav ul {display: none}
+    nav ul {
+        display: none
+    }
 
     .x-icon .line:first-child {
         transform: rotate(45deg);
@@ -189,11 +225,17 @@ nav ul li:hover {font-weight: 700}
         transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.35s;
     }
 
-    .line:first-child {top: 18%}
+    .line:first-child {
+        top: 18%
+    }
 
-    .line:nth-child(2) {top: 48%}
+    .line:nth-child(2) {
+        top: 48%
+    }
 
-    .line:nth-child(3) {top: 78%}
+    .line:nth-child(3) {
+        top: 78%
+    }
 
     .show-mobile-nav {
         display: block;
@@ -229,13 +271,19 @@ nav ul li:hover {font-weight: 700}
         left: 0;
     }
 
-    .show-mobile-nav li:last-of-type img {min-width: 100%}
+    .show-mobile-nav li:last-of-type img {
+        min-width: 100%
+    }
 
-    .show-mobile-nav img {height: 30%}
+    .show-mobile-nav img {
+        height: 30%
+    }
 
     /* Hero */
 
-    #mobile-hero {width: 100%}
+    #mobile-hero {
+        width: 100%
+    }
 
     h1 {
         font-size: 3rem;
@@ -250,9 +298,13 @@ nav ul li:hover {font-weight: 700}
     }
 
     #jumbo,
-    #how-we-work {padding: 6rem 2rem}
+    #how-we-work {
+        padding: 6rem 2rem;
+    }
 
-    #jumbo .bg-img-right {bottom: -30%}
+    #jumbo .bg-img-right {
+        bottom: -30%
+    }
 
     /* Features */
 
@@ -294,11 +346,15 @@ nav ul li:hover {font-weight: 700}
         margin-right: auto;
     }
 
-    #how-we-work h1 {font-size: 2.5rem}
+    #how-we-work h1 {
+        font-size: 2.5rem
+    }
 
     /* Footer */
 
-    footer .bg-img-left {width: 100%}
+    footer .bg-img-left {
+        width: 100%
+    }
 
     footer {
         grid-template-columns: 1fr;
@@ -313,7 +369,9 @@ nav ul li:hover {font-weight: 700}
         width: 90%;
     }
 
-    #social-media-links {margin-top: 2rem}
+    #social-media-links {
+        margin-top: 2rem
+    }
 
     i {
         margin: 0 .8rem;
@@ -321,9 +379,13 @@ nav ul li:hover {font-weight: 700}
         color: var(--darkGrayishViolet);
     }
 
-    footer ul li {font-size: 1.3rem}
+    footer ul li {
+        font-size: 1.3rem
+    }
 
-    footer ul li:first-child {margin: 2rem 0}
+    footer ul li:first-child {
+        margin: 2rem 0
+    }
 }
 
 /* Landscape Phones */
@@ -341,16 +403,22 @@ nav ul li:hover {font-weight: 700}
 
     /* Hero */
 
-    #mobile-hero {display: none}
+    #mobile-hero {
+        display: none
+    }
 
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
     }
 
-    #jumbo p {margin-bottom: 1rem}
+    #jumbo p {
+        margin-bottom: 1rem
+    }
 
-    #jumbo {padding: 1rem}
+    #jumbo {
+        padding: 1rem
+    }
 
     #jumbo-text-content {
         width: 50%;
@@ -368,7 +436,11 @@ nav ul li:hover {font-weight: 700}
 
 /* Break between phone, tablet... */
 
-@media (min-width: 840px) { #jumbo {padding: 3rem 1rem}}
+@media (min-width: 840px) {
+    #jumbo {
+        padding: 3rem 1rem;
+    }
+}
 
 /* Tablet */
 
@@ -376,11 +448,15 @@ nav ul li:hover {font-weight: 700}
 
     /* Nav */
 
-    natpadding: 0 2rem;}
+    nav {
+        padding: 0 2rem
+    }
 
     /* Jumbo */
 
-    #jumbo {padding: 8rem 2rem}
+    #jumbo {
+        padding: 8rem 2rem
+    }
 
     h1 {
         font-size: 3rem;
@@ -394,9 +470,17 @@ nav ul li:hover {font-weight: 700}
 
     /* Features */
 
-    h2 {font-size: 3.5rem;}
-    h3 {font-size: 2rem;}
-    .feature p {font-size: 1.6rem;}
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .feature p {
+        font-size: 1.6rem;
+    }
 
     /* How we work */
 
@@ -424,10 +508,21 @@ nav ul li:hover {font-weight: 700}
             "attr attr attr attr";
     }
 
-    footer ul {padding: 0 2rem}
-    footer header {grid-area: head}
-    footer .bg-img-left {width: 40%}
-    .attribution {grid-area: attr}
+    footer ul {
+        padding: 0 2rem;
+    }
+
+    footer header {
+        grid-area: head;
+    }
+
+    footer .bg-img-left {
+        width: 40%;
+    }
+
+    .attribution {
+        grid-area: attr;
+    }
 
     footer header {
         flex-direction: row;
@@ -445,16 +540,29 @@ nav ul li:hover {font-weight: 700}
 /* iPad Pro, Desktops */
 
 @media (min-width: 1360px) {
-
+    
     /* Remove Mobiles */
 
-    .mobile {display: none !important} .desktop {display: blockt}
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block;
+    }
 
     /* Align Site for Desktop */
 
-    nav, #jumbo, footer, section {padding: 0 12rem;}
+    nav,
+    #jumbo,
+    footer,
+    section {
+        padding: 0 12rem;
+    }
 
-    section {margin-bottom: 8rem}
+    section {
+        margin-bottom: 8rem;
+    }
 
     #how-we-work {
         width: auto;
@@ -462,9 +570,13 @@ nav ul li:hover {font-weight: 700}
         margin-left: 12rem;
     }
 
-    body {text-align: left}
+    body {
+        text-align: left
+    }
 
-    nav ul li {margin: 0 1rem}
+    nav ul li {
+        margin: 0 1rem
+    }
 
     nav ul li:nth-of-type(4) {
         border: 1px solid black !important;
@@ -474,7 +586,9 @@ nav ul li:hover {font-weight: 700}
 
     /* Jumbo */
 
-    h1 {font-size: 3.5rem}
+    h1 {
+        font-size: 3.5rem
+    }
 
     #jumbo {
         padding: 8rem 12rem;
@@ -488,9 +602,17 @@ nav ul li:hover {font-weight: 700}
         margin: 0 0 2rem 0;
     }
 
-    #jumbo p {font-size: 1.25rem}
-    #jumbo .bg-img-left {top: 65%}
-    #jumbo .bg-img-right {top: 0}
+    #jumbo p {
+        font-size: 1.25rem
+    }
+
+    #jumbo .bg-img-left {
+        top: 65%
+    }
+
+    #jumbo .bg-img-right {
+        top: 0
+    }
 
     #jumbo-text-content {
         display: inline-block;
@@ -509,7 +631,9 @@ nav ul li:hover {font-weight: 700}
 
     /* Features */
 
-    #features-box {display: flex}
+    #features-box {
+        display: flex;
+    }
 
     #features hr {
         width: 12.5%;
@@ -521,7 +645,9 @@ nav ul li:hover {font-weight: 700}
         align-items: flex-start;
     }
 
-    .feature p {font-size: 1.2}
+    .feature p {
+        font-size: 1.2rem;
+    }
 
     /* How we work */
 
@@ -543,11 +669,23 @@ nav ul li:hover {font-weight: 700}
 
     /* Footer */
 
-    footer header {padding: 4rem 0 3rem 0}
-    footer ul {padding-left: 0}
-    footer ul li {font-size: 1rem}
+    footer header {
+        padding: 4rem 0 3rem 0;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+    footer ul li {
+        font-size: 1rem;
+    }
 }
 
 /* TV's */
 
-@media (min-width: 1500px) { #jumbo {margin-bottom: 20rem} }
+@media (min-width: 1500px) {
+    #jumbo {
+        margin-bottom: 20rem;
+    }
+}
